@@ -1,0 +1,76 @@
+<div class="container-fluid" style="padding:0px 0px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <p style="font-size:30px; color:white;">MI Store</p>
+        
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phones">MI Phones</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" >Login</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown05">
+              <a class="dropdown-item" href="adm">Admin</a>
+              <a class="dropdown-item" href="userlog">User</a>
+            </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="signup">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+       <div class="container-fluid text-center" style="margin: 0px; padding: 0px 0px;">
+        <img src="../../assets/images/mi10.png" style="padding-top: 10px;"height="100%" width="100%">  
+        </div>
+      
+    <div *ngFor = "let l of latest">
+     <div class="container-fluid" style="background-color: black;">
+      <p style="color: white; font-size:30px; padding-top: 20px;"><center><b>It's all in the details</b></center></p>
+     <div class="row ">
+        <div class="col-sm-4">
+          <img [src]="l.camera_image" height="184" width="348">
+          <p class="title"><center>{{l.camera}}</center></p>
+        </div>
+
+        <div class="col-sm-4">
+            <img [src]="l.processor_image" height="184" width="348"> 
+          <p class="title"><center>{{l.processor}}</center></p>
+
+        </div>
+        <div class="col-sm-4">
+            <img [src]="l.display_image" height="184" width="348" style="padding-left: 20px;">
+          <p class="title"><center>{{l.display}}</center></p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img [src]="l.storage_image" height="184" width="348">
+          <p class="title"><center>{{l.storage}}</center></p>
+      </div>
+      
+      <div class="col-sm-4">
+          <img [src]="l.battery_image" height="184" width="348"> 
+          <p class="title"><center>{{l.battery}}</center></p>
+      </div>
+      
+      <div class="col-sm-4">
+        <img src="../../assets/images/latest product/charging.jpg" height="184" width="348"> 
+        <p class="title"><center>30W Wireless Charging + 10W Reverse Charging</center></p>
+    </div>
+    
+    </div>
+  </div> 
+</div>
+<div class="bg-dark"style="height: 30%;">
+<footer class="footer" >
+   
+      <span class="text-muted">Copyright © 2020 - 2021  Xiaomi. All Rights Reserved</span>
+    
+  </footer>
+</div>
+</div>

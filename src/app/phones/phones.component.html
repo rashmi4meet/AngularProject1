@@ -1,0 +1,52 @@
+<div class="container-fluid" style="color: black;">
+    
+      <div>
+          <table>
+            <tr *ngFor = "let p of product">
+             <td> 
+            <img [src]="p.product_image" height="50%" width="50%">
+            <h5>{{p.product_id}}</h5>
+            <h4>Price: ₹ 16,999</h4>
+            <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" class="btn btn-warning">Buy Now</a>
+            
+            </td>
+        
+
+        <td>
+          <img [src]="p.product_image"height="50%" width="50%">
+          <h5>{{p.product_id}}</h5>
+          <h4>Price: ₹ 10,999</h4>
+          <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
+          <a href="#" class="btn btn-warning">Buy Now</a>
+        </td>
+          
+        <td>
+        <img [src]="p.product_image"height="50%" width="50%">
+        <h5>{{p.product_id}}</h5>
+        <h4>Price:  ₹ 7,999</h4>
+        <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-warning">Buy Now</a>
+      </td>
+        
+         
+      <td>
+        <img [src]="p.product_image" height="50%" width="50%">
+        <h5 class="card-title">{{p.product_id}}</h5>
+        <h4>Price:  ₹ 9,999</h4>
+        <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-warning">Buy Now</a>
+      </td>
+     
+
+      <td>
+        <img [src]="p.product_image" height="50%" width="50%">
+        <h5>{{p.product_id}}</h5>
+        <h4>Price:  ₹ 10,999</h4>
+        <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="btn btn-warning">Buy Now</a>
+    </td>
+
+</tr>
+</table>
+</div>

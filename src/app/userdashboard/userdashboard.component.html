@@ -1,0 +1,59 @@
+<div class="jumbotron">
+    <table class="table table-bordered table-stripped table-hover" >
+        <thead>
+            <tr>
+                <th  style="text-align: center;background-color: cadetblue;"colspan="8">
+                   Registered user
+                </th>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Birthday</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Mobile</th>
+                <th>Delete User</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr *ngFor = "let s of signup">
+                    <td>{{s.firstname}}</td>
+                    <td>{{s.lastname}}</td>
+                    <td>{{s.birthday}}</td>
+                    <td>{{s.gender}}</td>
+                    <td>{{s.email}}</td>
+                    <td>{{s.password}}</td>
+                    <td>{{s.mobile}}</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+    </table>
+</div> 
+<hr style="size: 5px black;">
+<div class="jumbotron">
+    <table class="table table-bordered table-stripped table-hover" >
+        <thead>
+            <tr>
+                <th  style="text-align: center;background-color: cadetblue;"colspan="3">
+                    User Login Details
+                </th>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Delete Details</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr *ngFor = "let s of signup">
+                   
+                    <td>{{s.email}}</td>
+                    <td>{{s.password}}</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                   
+                </tr>
+            </tbody>
+    </table>
+</div> 

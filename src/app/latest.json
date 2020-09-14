@@ -1,0 +1,19 @@
+{
+  "latest": [
+    {
+      "product_name": "mi 10 x",
+      "product_image": "../../assets/images/latest product/mi10.jpg",
+      "camera": "108 MP Quad Camera+OIS",
+      "camera_image": "../../assets/images/latest product/camera.jpg",
+      "processor": "Qualcomm® Snapdragon™ 865",
+      "processor_image": "../../assets/images/latest product/processor.jpg",
+      "display": "16.94cm (6.67) 3D Curved E3 AMOLED Display",
+      "display_image": "../../assets/images/latest product/display.jpg",
+      "storage": " LPDDR5 RAM + UFS 3.0 Storage",
+      "storage_image": "../../assets/images/latest product/ram.jpg",
+      "battery": "30W Wireless Charging +10W Reverse Charging",
+      "battery_image": "../../assets/images/latest product/batrrey.jpg",
+      "id": 1
+    }
+  ]
+}

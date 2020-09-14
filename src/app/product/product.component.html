@@ -1,0 +1,102 @@
+<div class="jumbotron">
+<form [formGroup]= "form" (ngSubmit)="register()">
+<div style="text-align:center">
+    <h1>Product Specifications</h1>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="product_id">Product Id</label>  
+    <div class="col-md-4">
+    <input id="product_id" name="product_id" formControlName="product_id" class="form-control input-md" type="text">
+      
+    </div>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="product_name">Product Name</label>  
+    <div class="col-md-4">
+    <input id="product_name" name="product_name" formControlName="product_name" class="form-control input-md" type="text">
+      
+    </div>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="rear_camera">Rear Camera</label>  
+    <div class="col-md-4">
+    <input id="rear_camera" name="rear_camera" formControlName="rear_camera" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="front_camera">Front Camera</label>  
+    <div class="col-md-4">
+    <input id="front_camera" name="front_camera"  formControlName="front_camera" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="processor">Processor</label>  
+    <div class="col-md-4">
+    <input id="processor" name="processor"  formControlName="processor" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="operating_system">Operating System</label>  
+    <div class="col-md-4">
+    <input id="operating_system" name="operating_system"  formControlName="operating_system" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="storage">Storage and Ram </label>  
+    <div class="col-md-4">
+    <input id="storage" name="storage"  formControlName="storage" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="display">Display</label>  
+    <div class="col-md-4">
+    <input id="display" name="display"  formControlName="display" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="battery">Charging and Battery </label>  
+    <div class="col-md-4">
+    <input id="battery" name="battery" formControlName="battery"  class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="dimensions">Dimensions</label>  
+    <div class="col-md-4">
+    <input id="dimensions" name="dimensions"   formControlName="dimensions" class="form-control input-md" required="" type="text">
+    </div>
+  </div>
+
+  
+  <!-- File Button --> 
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="product_image">Product image</label>
+    <div class="col-md-4">
+      <input id="product_image" name="product_image" class="form-control input-md" formControlName="product_image"  type="text">
+    </div>
+  </div>
+  
+  
+  <!-- Button -->
+<div class="form-group">
+    <div class="col-md-4">
+      <button type="submit" class="btn btn-success">submit</button>
+    </div>
+    </div>
+  </form>
+</div>
+

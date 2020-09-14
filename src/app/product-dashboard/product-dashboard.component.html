@@ -1,0 +1,44 @@
+<div class="jumbotron">
+    <table class="table table-bordered table-stripped table-hover" >
+        <thead>
+            <tr>
+                <th  style="text-align: center;background-color: cadetblue;"colspan="16">
+                    Product Details
+                </th>
+    
+            </tr>
+            <tr>
+                <th> product id </th>
+                <th> product name </th>
+                <th> Rear Camera</th>
+                <th> Front Camera </th>
+                <th> Processor</th>
+                <th> Operating System</th>
+                <th> Storage</th>
+                <th> Display</th>
+                <th> Charging and Battery</th>
+                <th> Dimensions</th>
+                <th> Product Image</th>
+                <th> Update Product</th>
+                <th> Delete Product</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let p of product">
+                <td>{{p.product_id}}</td>
+                <td>{{p.product_name}}</td>
+                <td>{{p.rear_camera}}</td>
+                <td>{{p.front_camera}}</td>
+                <td>{{p.processor}}</td>
+                <td>{{p.operating_system}}</td>
+                <td>{{p.storage}}</td>
+                <td>{{p.display}}</td>
+                <td>{{p.battery}}</td>
+                <td>{{p.dimensions}}</td>
+                <td>{{p.product_image}}</td>
+                <td><button class="btn btn-primary">Edit</button></td>
+                <td><button class="btn btn-danger" (click)="deleteProduct(p.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

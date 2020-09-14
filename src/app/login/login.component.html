@@ -1,0 +1,33 @@
+<div class="jumbotron">
+    <form [formGroup] = "form" (ngSubmit)="register()" >
+        <div> 
+            <h1>Account Login</h1>
+        </div>
+        
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="username">Username</label>  
+            <div class="col-md-4">
+            <input name="username" formControlName="username" class="form-control input-md" type="text" placeholder="Enter your Email">
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="password">Password</label>  
+            <div class="col-md-4">
+            <input name="password" formControlName="password" class="form-control input-md" type="password" placeholder="Enter your password">
+        </div>
+        </div>
+    
+
+        <div class="form-group">
+          <div class="col-md-4">
+          <button type="submit" class="btn btn-success">Login</button>&nbsp;&nbsp;&nbsp;
+          <a href="register">Sign Up</a>
+        </div>
+        </div>
+        </form>
+    </div>
+
+
+
+                 

@@ -1,0 +1,98 @@
+<div class="container">
+    <table class="table table-bordered table-stripped table-hover">
+        <thead>
+            <tr>
+                <th style="text-align: center;background-color: cadetblue;" colspan="15">
+                    Latest Product Details
+                </th>
+
+            </tr>
+            <tr>
+                <th> product Id</th>
+                <th> product name </th>
+                
+                <th> Camera</th>
+                
+                <th> Processor</th>
+                
+                <th> Display</th>
+                
+                <th> Storage</th>
+               
+                <th> Charging and Battery</th>
+                <th>Update Product</th>
+                <th>Delete Product</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let l of latest">
+
+                <td>{{l.product_id}}</td>
+
+                <td>{{l.product_name}}</td>
+                
+                <td>{{l.camera}}</td>
+                
+                <td>{{l.processor}}</td>
+                
+                <td>{{l.display}}</td>
+               
+                <td>{{l.storage}}</td>
+               
+                <td>{{l.battery}}</td>
+                <td><button class="btn btn-primary">Edit</button></td>
+                <td><button class="btn btn-danger"(click)="deleteProduct(l.id)">Delete</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+<hr size="5px black">
+<div class="jumbotron">
+    <table class="table table-bordered table-stripped table-hover">
+        <thead>
+            <tr>
+                <th style="text-align: center;background-color: cadetblue;" colspan="15">
+                    Latest Product images
+                </th>
+
+            </tr>
+            <tr>
+
+                <th> Product Image</th>
+                <th> Camera Image</th>
+                <th> Processor Image</th>
+                <th> Display Image</th>
+                <th> Storage Image</th>
+                <th> Battery Image</th>
+                <th>Update Product</th>
+                <th>Delete Product</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let l of latest">
+
+                
+                <td>{{l.product_image}}</td>
+               
+                <td>{{l.camera_image}}</td>
+                
+                <td>{{l.processor_image}}</td>
+                
+                <td>{{l.display_image}}</td>
+                
+                <td>{{l.storage_image}}</td>
+               
+                <td>{{l.battery_image}}</td>
+                <td><button class="btn btn-primary">Edit</button></td>
+                <td><button class="btn btn-danger" (click)="deleteProduct(l.id)">Delete</button></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+</div>
