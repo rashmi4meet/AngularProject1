@@ -1,4 +1,8 @@
 <div class="container">
+
+    <div class="jumbotron" style="height: 40%; width: 100%; background-color: black; color: white; text-align: center; font-size: x-large;">
+        Latest Product Dashboard
+    </div>
     <table class="table table-bordered table-stripped table-hover">
         <thead>
             <tr>
@@ -8,7 +12,7 @@
 
             </tr>
             <tr>
-                <th> product Id</th>
+            
                 <th> product name </th>
                 
                 <th> Camera</th>
@@ -19,7 +23,9 @@
                 
                 <th> Storage</th>
                
-                <th> Charging and Battery</th>
+                <th> Battery</th>
+
+                <th> Charging</th>
                 <th>Update Product</th>
                 <th>Delete Product</th>
 
@@ -28,8 +34,6 @@
         </thead>
         <tbody>
             <tr *ngFor="let l of latest">
-
-                <td>{{l.product_id}}</td>
 
                 <td>{{l.product_name}}</td>
                 
@@ -42,7 +46,9 @@
                 <td>{{l.storage}}</td>
                
                 <td>{{l.battery}}</td>
-                <td><button class="btn btn-primary">Edit</button></td>
+
+                <td>{{l.Charging}}</td>
+                <td><button class="btn btn-primary" [routerLink]="['/update',l.id]">Edit</button></td>
                 <td><button class="btn btn-danger"(click)="deleteProduct(l.id)">Delete</button></td>
             </tr>
         </tbody>
@@ -50,7 +56,7 @@
     </table>
 </div>
 <hr size="5px black">
-<div class="jumbotron">
+<div class="container">
     <table class="table table-bordered table-stripped table-hover">
         <thead>
             <tr>
@@ -67,6 +73,7 @@
                 <th> Display Image</th>
                 <th> Storage Image</th>
                 <th> Battery Image</th>
+                <th> Charging Image</th>
                 <th>Update Product</th>
                 <th>Delete Product</th>
 
@@ -88,7 +95,9 @@
                 <td>{{l.storage_image}}</td>
                
                 <td>{{l.battery_image}}</td>
-                <td><button class="btn btn-primary">Edit</button></td>
+
+                <td>{{l.charging_image}}</td>
+                <td><button class="btn btn-primary" [routerLink]="['/update',l.id]">Edit</button></td>
                 <td><button class="btn btn-danger" (click)="deleteProduct(l.id)">Delete</button></td>
 
             </tr>

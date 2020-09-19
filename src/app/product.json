@@ -1,20 +1,6 @@
 {
   "product": [
     {
-      "product_name": "Redmi Note 9 Pro Max",
-      "product_id": "",
-      "rear_camera": "",
-      "front_camera": "",
-      "processor": "",
-      "operating_system": "",
-      "storage": "",
-      "display": "",
-      "battery": "",
-      "dimensions": "",
-      "product_image": "../../assets/images/phones/minote9maxpro.png",
-      "id": 1
-    },
-    {
       "product_name": "Redmi 8A",
       "product_id": "",
       "rear_camera": "",
@@ -26,7 +12,7 @@
       "battery": "",
       "dimensions": "",
       "product_image": "../../assets/images/phones/redmi8A.jpg",
-      "id": 2
+      "id": 4
     },
     {
       "product_name": "Redmi 9",
@@ -40,34 +26,6 @@
       "battery": "",
       "dimensions": "",
       "product_image": "../../assets/images/phones/redmi9.png",
-      "id": 3
-    },
-    {
-      "product_name": "Redmi 9A",
-      "product_id": "",
-      "rear_camera": "",
-      "front_camera": "",
-      "processor": "",
-      "operating_system": "",
-      "storage": "",
-      "display": "",
-      "battery": "",
-      "dimensions": "",
-      "product_image": "../../assets/images/phones/redmi9A.png",
-      "id": 4
-    },
-    {
-      "product_name": "Redmi Note 7",
-      "product_id": "",
-      "rear_camera": "",
-      "front_camera": "",
-      "processor": "",
-      "operating_system": "",
-      "storage": "",
-      "display": "",
-      "battery": "",
-      "dimensions": "",
-      "product_image": "../../assets/images/phones/redminote7.jpg",
       "id": 5
     }
   ]

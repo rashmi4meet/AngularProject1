@@ -18,6 +18,9 @@ import { LatestproductdashboardComponent } from './latestproductdashboard/latest
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { PhonesComponent } from './phones/phones.component';
+import { LatestService } from './latest.service';
+import { UpdateproductComponent } from './updateproduct/updateproduct.component';
+import { UpdatelatestproductComponent } from './updatelatestproduct/updatelatestproduct.component';
 
 
 
@@ -35,6 +38,8 @@ import { PhonesComponent } from './phones/phones.component';
     HomeComponent,
     AdminComponent,
     PhonesComponent,
+    UpdateproductComponent,
+    UpdatelatestproductComponent,
 
   ],
   imports: [
@@ -44,7 +49,7 @@ import { PhonesComponent } from './phones/phones.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [DataService,ProductService],
+  providers: [DataService,ProductService,LatestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

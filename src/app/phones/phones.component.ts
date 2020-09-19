@@ -11,17 +11,18 @@ export class PhonesComponent implements OnInit {
   product:any=[]
  
   getProductData(){
+    
     this.productservice.getProduct().subscribe((res)=>{
-      this.product=res 
-      console.log(this.product)
+    this.product=res 
+     
     })
   }
 
 
   constructor(private productservice:ProductService) { }
 
-  ngOnInit(): void {
-     this.getProductData()
+    ngOnInit(): void {
+    this.getProductData()
 
   }
 

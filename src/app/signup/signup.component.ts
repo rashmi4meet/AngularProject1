@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
   register()
   {
     this.dataservice.saveUserData(this.form.value).subscribe((res)=>{
-      alert("users data save successfully")
+    alert("users data save successfully");
     })
   }
 

@@ -1,28 +1,15 @@
-<div>
+<div style="width: 100%; height:40%; background-color: black;" class="jumbotron">
+    <h1 style="color:white; text-align: center;">Admin Panel</h1>
+</div>  
+<div style="padding-top: 40px;">  
+          <ul style="text-align: center;list-style-type: none">
+            <li> <a class="button button1" [routerLink]="['/home']">Home</a></li>
+            <li><a class="button button1"  [routerLink]="['/alp']">Add Latest product</a></li>
+            <li><a class="button button1" [routerLink]="['/latprodash']">Latest Product Management</a></li>
+            <li><a class="button button1"  [routerLink]="['/pro']">Add product</a></li>
+            <li><a class="button button1" [routerLink]="['/prodash']">Product Management</a></li>
+            <li><a class="button button1" [routerLink]="['/userdash']">User Management</a></li>
+        </ul>
+</div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">MI LOGO</a>
-        
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="alp">Add Latest Product</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="latprodash">Latest Product Management</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pro">Add Product</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="prodash">Product Management</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="userdash">User Management</a>
-            </li>
-
-          </ul>
-        </nav>
-    </div>
+  

@@ -11,11 +11,23 @@ export class ProductService {
   saveProductData(data){
     return this.httpClient.post(api,data)
   }
+
   getProduct()
   {
     return this.httpClient.get(api)
   }
 
+  getProductById(id)
+  {
+      return this.httpClient.get(api+id)
+  }
+
+  updateProduct(id, data)
+  {
+    return this.httpClient.put(api+id,data)
+  }
+
+  
   deleteProduct(id){
     return this.httpClient.delete(api+id)
   }

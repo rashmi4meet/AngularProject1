@@ -1,4 +1,8 @@
-<div class="jumbotron">
+<div class="container">
+
+    <div class="jumbotron" style="color: white; background-color: black; text-align: center; font-size: x-large;">
+        Product Detail dashboard
+    </div>
     <table class="table table-bordered table-stripped table-hover" >
         <thead>
             <tr>
@@ -8,7 +12,7 @@
     
             </tr>
             <tr>
-                <th> product id </th>
+                
                 <th> product name </th>
                 <th> Rear Camera</th>
                 <th> Front Camera </th>
@@ -25,7 +29,7 @@
         </thead>
         <tbody>
             <tr *ngFor = "let p of product">
-                <td>{{p.product_id}}</td>
+               
                 <td>{{p.product_name}}</td>
                 <td>{{p.rear_camera}}</td>
                 <td>{{p.front_camera}}</td>
@@ -36,7 +40,7 @@
                 <td>{{p.battery}}</td>
                 <td>{{p.dimensions}}</td>
                 <td>{{p.product_image}}</td>
-                <td><button class="btn btn-primary">Edit</button></td>
+                <td><button class="btn btn-primary" [routerLink]="['/updatepro',p.id]">Edit</button></td>
                 <td><button class="btn btn-danger" (click)="deleteProduct(p.id)">Delete</button></td>
             </tr>
         </tbody>

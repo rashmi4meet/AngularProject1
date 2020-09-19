@@ -41,6 +41,8 @@ export class LatestProductComponent implements OnInit {
     storage_image:new FormControl(""),
     battery:new FormControl(""),
     battery_image:new FormControl(""),
+    charging:new FormControl(""),
+    charging_image:new FormControl(""),
     
   })
   }

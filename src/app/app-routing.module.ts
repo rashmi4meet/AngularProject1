@@ -10,6 +10,8 @@ import { PhonesComponent } from './phones/phones.component';
 import { ProductDashboardComponent } from './product-dashboard/product-dashboard.component';
 import { ProductComponent } from './product/product.component';
 import { SignupComponent } from './signup/signup.component';
+import { UpdatelatestproductComponent } from './updatelatestproduct/updatelatestproduct.component';
+import { UpdateproductComponent } from './updateproduct/updateproduct.component';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 
 const routes: Routes = [
@@ -23,9 +25,16 @@ const routes: Routes = [
   {path:"userlog",component:LoginComponent},
   {path:"signup",component:SignupComponent},
   {path:"register",component:SignupComponent},
-  {path:"alp",component:LatestProductComponent},
+  {path:"alp",component:LatestProductComponent,
+  children:[
+    {path:'adminhome',component:AdminComponent}
+  ]},
+
   {path:"latprodash",component:LatestproductdashboardComponent},
-  {path:"phones",component:PhonesComponent}
+  {path:"phones",component:PhonesComponent},
+  {path:"update/:id",component:UpdatelatestproductComponent},
+  {path:"updatepro/:id",component:UpdateproductComponent},
+  
 ];
 
 @NgModule({

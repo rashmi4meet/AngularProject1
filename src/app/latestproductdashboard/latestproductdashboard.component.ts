@@ -8,6 +8,7 @@ import {LatestService} from '../latest.service';
 export class LatestproductdashboardComponent implements OnInit {
 
   latest:any=[]
+  
 
   deleteProduct(id){
     this.latestservice.deletelatestProduct(id).subscribe((res)=>{

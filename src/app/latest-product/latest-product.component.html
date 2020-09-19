@@ -1,111 +1,131 @@
-<div class="jumbotron">
-    <form [formGroup]= "form" (ngSubmit)="register()">
-    <div style="text-align:center">
-        <h1>Latest Product Specifications</h1>
-    </div>
+<div class="container" style="padding-left: 150px; padding-right: 200px">
+
+
+  <div style="text-align:center; background-color: black; color: white;" class="jumbotron">
+    <h1>Latest Product Specifications</h1>
+  </div>
+  <div style=" border: 2px solid black;">   
+    
+    <form [formGroup]= "form" (ngSubmit)="register()" style="padding-top: 35px; padding-left: 50px;">
+   
 
       
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="product_name">Product Name</label>  
-        <div class="col-md-4">
-        <input id="product_name" name="product_name" formControlName="product_name" class="form-control input-md" required="" type="text">
-          
+        <div class="form-group">
+        <label class="col-md-4 control-label" for="product_name">Product Name : </label>  
+        <div class="col-md-6">
+          <input id="product_name" name="product_name" class="form-control input-md" formControlName="product_name" placeholder="Enter product name " type="text">
+        
         </div>
       </div>
       
       <div class="form-group">
-        <label class="col-md-4 control-label" for="product_image">Product image</label>
-        <div class="col-md-4">
-          <input id="product_image" name="product_image" class="form-control input-md" formControlName="product_image"  type="text">
+        <label class="col-md-4 control-label" for="product_image">Product image : </label>
+        <div class="col-md-6">
+          <input id="product_image" name="product_image" class="form-control input-md" formControlName="product_image" placeholder="Enter Product image" type="text">
         </div>
       </div>
 
       <!-- Text input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="camera">Camera</label>  
-        <div class="col-md-4">
-        <input id="camera" name="camera" formControlName="camera" class="form-control input-md" required="" type="textarea">
+        <label class="col-md-4 control-label" for="camera">Camera : </label>  
+        <div class="col-md-6">
+        <input id="camera" name="camera" formControlName="camera" class="form-control input-md" placeholder="Enter camera detail" type="textarea">
         </div>
       </div>
      
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="camera_image">Camera image</label>
-        <div class="col-md-4">
-          <input id="camera_image" name="camera_image" class="form-control input-md" formControlName="camera_image"  type="text">
+      <div class="form-group-6">
+        <label class="col-md-4 control-label" for="camera_image">Camera image : </label>
+        <div class="col-md-6">
+          <input id="camera_image" name="camera_image" class="form-control input-md" formControlName="camera_image" placeholder="Enter camera image"  type="text">
         </div>
       </div>
     
       <div class="form-group">
-        <label class="col-md-4 control-label" for="processor">Processor</label>  
-        <div class="col-md-4">
-        <input id="processor" name="processor"  formControlName="processor" class="form-control input-md" required="" type="textarea">
+        <label class="col-md-4 control-label" for="processor">Processor : </label>  
+        <div class="col-md-6">
+        <input id="processor" name="processor"  formControlName="processor" class="form-control input-md" placeholder="Enter the proccessor detail" type="textarea">
         </div>
       </div>
 
 
       <div class="form-group">
-        <label class="col-md-4 control-label" for="processor_image">Processor image</label>
-        <div class="col-md-4">
-          <input id="processor_image" name="processor_image" class="form-control input-md" formControlName="processor_image"  type="text">
+        <label class="col-md-4 control-label" for="processor_image">Processor image : </label>
+        <div class="col-md-6">
+          <input id="processor_image" name="processor_image" class="form-control input-md" formControlName="processor_image" placeholder="Enter the proccessor image"  type="text">
         </div>
       </div>
 
      <div class="form-group">
-        <label class="col-md-4 control-label" for="display">Display</label>  
-        <div class="col-md-4">
-        <input id="display" name="display"  formControlName="display" class="form-control input-md" required="" type="textarea">
+        <label class="col-md-4 control-label" for="display">Display : </label>  
+        <div class="col-md-6">
+        <input id="display" name="display"  formControlName="display" class="form-control input-md" placeholder="Enter the display detail" type="textarea">
         </div>
       </div>
 
 
       <div class="form-group">
-        <label class="col-md-4 control-label" for="display_image">Display image</label>
-        <div class="col-md-4">
-          <input id="display_image" name="display_image" class="form-control input-md" formControlName="display_image" type="text">
-        </div>
-      </div>
-    
-    
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="storage">Storage and Ram </label>  
-        <div class="col-md-4">
-        <input id="storage" name="storage"  formControlName="storage" class="form-control input-md" required="" type="textarea">
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="storage_image">Storage image</label>
-        <div class="col-md-4">
-          <input id="storage_image" name="storage_image" class="form-control input-md" formControlName="storage_image" type="text">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="battery">Charging and Battery </label>  
-        <div class="col-md-4">
-        <input id="battery" name="battery" formControlName="battery"  class="form-control input-md" required="" type="text">
+        <label class="col-md-4 control-label" for="display_image">Display image : </label>
+        <div class="col-md-6">
+          <input id="display_image" name="display_image" class="form-control input-md" formControlName="display_image" placeholder="Enter the display image" type="text">
         </div>
       </div>
     
+    
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="storage">Storage and Ram : </label>  
+        <div class="col-md-6">
+        <input id="storage" name="storage"  formControlName="storage" class="form-control input-md" placeholder="Enter the storage detail" type="textarea">
+        </div>
+      </div>
+
 
       <div class="form-group">
-        <label class="col-md-4 control-label" for="battery_image">Battery image</label>
-        <div class="col-md-4">
-          <input id="battery_image" name="battery_image" class="form-control input-md" formControlName="battery_image" type="text">
+        <label class="col-md-4 control-label" for="storage_image">Storage image : </label>
+        <div class="col-md-6">
+          <input id="storage_image" name="storage_image" class="form-control input-md" formControlName="storage_image" placeholder="Enter the storage image" type="text">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="battery">Battery : </label>  
+        <div class="col-md-6">
+        <input id="battery" name="battery" formControlName="battery"  class="form-control input-md" placeholder="Enter the battery detail " type="text">
+        </div>
+      </div>
+    
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="battery_image">Battery image : </label>
+        <div class="col-md-6">
+          <input id="battery_image" name="battery_image" class="form-control input-md" formControlName="battery_image" placeholder="Enter the battery image" type="text">
         </div>
       </div>
       
-     
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="charging">Charging : </label>  
+        <div class="col-md-6">
+        <input id="charging" name="charging" formControlName="charging"  class="form-control input-md" placeholder="Enter the charging detail" type="text">
+        </div>
+      </div>
+    
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="charging_image">Charging image : </label>
+        <div class="col-md-6">
+          <input id="charging_image" name="charging_image" class="form-control input-md" formControlName="charging_image" placeholder="Enter the charging image" type="text">
+        </div>
+      </div>
       <!-- Button -->
     <div class="form-group">
         <div class="col-md-4">
-          <button type="submit" class="btn btn-success">submit</button>
+          <button type="submit" class="btn btn-success">submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+           <a class="btn btn-info" [routerLink]="['/alp/adminhome']">Back</a>
         </div>
         </div>
       
       </form>
+
+    
     </div>
     
    

@@ -1,0 +1,107 @@
+<div class="container" style="padding-left: 150px; padding-right: 200px">
+    <div style="text-align:center; background-color: black; color: white;" class="jumbotron">
+      <h1>Update Product Specifications</h1>
+  </div>
+  
+  <div style=" border: 2px solid black;">
+  <form [formGroup]= "form" (ngSubmit)="update()" style="padding-top: 35px; padding-left: 50px;">
+  
+  <div class="form-group">
+      <label class="col-md-4 control-label" for="product_id">Product Id</label>  
+      <div class="col-md-6">
+      <input id="product_id" name="product_id" formControlName="product_id" class="form-control input-md" placeholder="Enter the product Id" type="text">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="product_name">Product Name</label>  
+      <div class="col-md-6">
+      <input id="product_name" name="product_name" formControlName="product_name" class="form-control input-md" placeholder="Enter the product name" type="text">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="rear_camera">Rear Camera</label>  
+      <div class="col-md-6">
+      <input id="rear_camera" name="rear_camera" formControlName="rear_camera" class="form-control input-md" placeholder="Enter rear camera detail" type="text">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="front_camera">Front Camera</label>  
+      <div class="col-md-6">
+      <input id="front_camera" name="front_camera"  formControlName="front_camera" class="form-control input-md" placeholder="Enter front camera detail" type="text">
+      </div>
+    </div>
+  
+  
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="processor">Processor</label>  
+      <div class="col-md-6">
+      <input id="processor" name="processor"  formControlName="processor" class="form-control input-md" placeholder="Enter the processor" type="text">
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="operating_system">Operating System</label>  
+      <div class="col-md-6">
+      <input id="operating_system" name="operating_system"  formControlName="operating_system" class="form-control input-md" placeholder="Enter the operating system detail" type="text">
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="storage">Storage and Ram </label>  
+      <div class="col-md-6">
+      <input id="storage" name="storage"  formControlName="storage" class="form-control input-md" placeholder="Enter the storage and ram detail" type="text">
+      </div>
+    </div>
+  
+  
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="display">Display</label>  
+      <div class="col-md-6">
+      <input id="display" name="display"  formControlName="display" class="form-control input-md" placeholder="Enter the display detail" type="text">
+      </div>
+    </div>
+  
+  
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="battery">Charging and Battery </label>  
+      <div class="col-md-6">
+      <input id="battery" name="battery" formControlName="battery"  class="form-control input-md" placeholder="Enter the charging detail" type="text">
+      </div>
+    </div>
+  
+  
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="dimensions">Dimensions</label>  
+      <div class="col-md-6">
+      <input id="dimensions" name="dimensions"   formControlName="dimensions" class="form-control input-md" placeholder="Enter the dimension detail" type="text">
+      </div>
+    </div>
+  
+    
+    <!-- File Button --> 
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="product_image">Product image</label>
+      <div class="col-md-6">
+        <input id="product_image" name="product_image" class="form-control input-md" formControlName="product_image"  type="file">
+      </div>
+    </div>
+    
+    
+    <!-- Button -->
+  <div class="form-group">
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-success">submit</button>&nbsp;&nbsp;&nbsp;
+        <a  type ="reset" class="btn btn-info">Clear</a>
+      </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  

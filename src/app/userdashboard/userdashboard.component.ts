@@ -12,6 +12,14 @@ export class UserdashboardComponent implements OnInit {
 
 
   signup:any=[]
+
+
+  deleteLogin(id){
+    this.dataservice.deleteUser(id).subscribe((res)=>{
+      alert("Data Delete Sucessfully")
+      this.getUserData()
+    })
+  }
   
   constructor(private dataservice:DataService) { }
 

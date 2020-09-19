@@ -1,4 +1,7 @@
-<div class="jumbotron">
+<div class="container">
+    <div class="jumbotron" style="color: white; background-color: black; text-align: center; font-size: x-large;">
+        User Detail dashboard
+    </div>
     <table class="table table-bordered table-stripped table-hover" >
         <thead>
             <tr>
@@ -26,13 +29,17 @@
                     <td>{{s.email}}</td>
                     <td>{{s.password}}</td>
                     <td>{{s.mobile}}</td>
-                    <td><button class="btn btn-danger">Delete</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteLogin(s.id)">Delete</button></td>
                 </tr>
             </tbody>
     </table>
 </div> 
 <hr style="size: 5px black;">
-<div class="jumbotron">
+<div class="container">
+
+    <div class="jumbotron" style="color: white; background-color: black; text-align: center; font-size: x-large;">
+        Login Detail dashboard
+    </div>
     <table class="table table-bordered table-stripped table-hover" >
         <thead>
             <tr>
@@ -51,7 +58,7 @@
                    
                     <td>{{s.email}}</td>
                     <td>{{s.password}}</td>
-                    <td><button class="btn btn-danger">Delete</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteLogin(s.id)"> Delete</button></td>
                    
                 </tr>
             </tbody>

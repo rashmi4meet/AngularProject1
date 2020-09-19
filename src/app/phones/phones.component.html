@@ -1,52 +1,13 @@
-<div class="container-fluid" style="color: black;">
-    
-      <div>
-          <table>
-            <tr *ngFor = "let p of product">
-             <td> 
-            <img [src]="p.product_image" height="50%" width="50%">
-            <h5>{{p.product_id}}</h5>
-            <h4>Price: ₹ 16,999</h4>
-            <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
-            <a href="#" class="btn btn-warning">Buy Now</a>
-            
-            </td>
-        
-
-        <td>
-          <img [src]="p.product_image"height="50%" width="50%">
-          <h5>{{p.product_id}}</h5>
-          <h4>Price: ₹ 10,999</h4>
-          <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
-          <a href="#" class="btn btn-warning">Buy Now</a>
-        </td>
-          
-        <td>
-        <img [src]="p.product_image"height="50%" width="50%">
-        <h5>{{p.product_id}}</h5>
-        <h4>Price:  ₹ 7,999</h4>
-        <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
-        <a href="#" class="btn btn-warning">Buy Now</a>
-      </td>
-        
-         
-      <td>
-        <img [src]="p.product_image" height="50%" width="50%">
-        <h5 class="card-title">{{p.product_id}}</h5>
-        <h4>Price:  ₹ 9,999</h4>
-        <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
-        <a href="#" class="btn btn-warning">Buy Now</a>
-      </td>
-     
-
-      <td>
-        <img [src]="p.product_image" height="50%" width="50%">
-        <h5>{{p.product_id}}</h5>
-        <h4>Price:  ₹ 10,999</h4>
-        <a href="#" class="btn btn-primary">Details</a>&nbsp;&nbsp;&nbsp;
-        <a href="#" class="btn btn-warning">Buy Now</a>
-    </td>
-
-</tr>
-</table>
+<div style="width: 100%; background-color: black;" class="jumbotron">
+<h1 style="color:white; text-align: center;">Phones</h1>
 </div>
+<div *ngFor = "let l of product">
+<div class="row ">
+    <div class="col">
+    <img [src]="l.product_image" height="184" width="348">
+    <p class="title" style="padding-left: 30px;">{{l.product_name}}</p>
+    </div>
+    </div>
+
+</div>
+
